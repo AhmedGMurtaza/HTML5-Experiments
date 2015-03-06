@@ -1,3 +1,7 @@
+
+// Author :: Ahmed Murtaza
+// www.twitter.com/ahmedgmurtaza
+
 var requestAnimFrame = (function(){
   return window.requestAnimationFrame       || 
          window.webkitRequestAnimationFrame || 
