@@ -1,0 +1,18 @@
+
+.con {
+  position: relative;
+  margin: 0 auto;
+}
+
+input {
+  position: absolute; 
+}
+
+.controls{
+  float:left;
+}
+
+.controls input{
+  display:block;
+  padding:10px;
+}
