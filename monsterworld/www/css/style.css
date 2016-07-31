@@ -1,0 +1,339 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*GAME SCREEN*/
+#game{
+    background: url("../img/gamebg.png");
+    position: fixed;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+}
+#bg{
+    position: absolute;
+    left: 50%;
+    margin-left: -175px;
+    top: 140px;
+}
+#f{
+    position:absolute;
+    top:50px;
+    left:50%;
+    margin-left: -75px;
+    width:150px;
+    height:50px;
+    text-align:center;
+    color:#ffffff;
+    margin-top: 22px;
+}
+#r, #s{
+    position:absolute;
+    width:auto;
+    line-height:20px;
+    color:#fff;
+    padding :0 10px;
+    top: 12px;
+}
+#s{
+    right:0;
+}
+#s div{
+    margin: 0 10px;
+}
+#r{
+    left: 0;
+}
+#d {
+    background-position: 0 0;
+    position: absolute;
+    top:0;
+    width:100%;
+    height: 100%;
+}
+
+/*/GAME SCREEN*/
+
+.scoreboard{
+    position:absolute;
+    height:100%;
+    width:100%;
+}
+
+/*score screen background */
+.scorebg{
+    position: fixed;
+    z-index: -1;
+    height:100%;
+    width:100%;
+}
+
+.score_container{
+    position: absolute;
+    top:27%;
+    left: 50%;
+    margin: -72px 0 0 -160px; 
+}
+
+.score_container *{
+    display: block;
+}
+
+.gameover_text{
+    margin-top: 27px;
+    margin-bottom: 27px;
+    margin-left: 10px;
+}
+
+/* score heading and score*/
+.scoretext, .scorecard{
+    font :'arial';
+    margin: 0 auto;
+}
+
+.scoretext{
+/*    top:27%;
+    left:50%;
+        margin-left:-127px;
+    margin-top: -50px;
+*/    /*position:absolute;*/
+}
+
+.livescore{
+    background:rgba(0,0,0,0.72);
+    padding: 22px; 
+}
+
+.scorecard{
+    font-weight: normal;
+    width:100%;
+    text-align:center;
+    font-size:5em;
+    color:#EDC17B;
+    font-family: 'arial';
+    text-shadow:4px 4px 7px #000000;
+}
+
+.sharetext{
+    margin: 50px auto 0 auto;
+}
+
+.share{
+    text-align:center;
+    padding:0;
+    width:135px;
+    margin: 0 auto;
+}
+
+.share li{
+    padding:0 5px;
+    float:left;
+}
+
+.share li *{
+    display: block;
+}
+
+.share .fb{
+    background:url('../img/fb.png');
+    background-position: 5px 0; 
+    background-repeat:no-repeat;
+    height: inherit;
+    width: 270px;
+}
+
+.pluginShareButtonLink{
+    display: block;
+    background: green;
+    border:1px solid red;
+}
+
+.clearfloat{
+    clear: both;
+}
+
+/*ABPOUT ANd INSTRUCTION SECTION*/
+.darkbg{
+    background:#000000;
+}
+
+.about{
+  text-align: left;
+  font-size: 14px;
+  font-family: 'arial';
+  line-height: 24px;
+  margin-top: 50px;
+  padding: 0 20px;
+  color:#fff;
+}
+
+.about h2{
+    color: inherit;
+    font-size: 27px;
+    text-align: center;
+}
+
+.about a{
+    text-decoration: none;
+    color:#F77100;
+    text-align: center;
+    display: block;
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+}
+
+.back{
+  background: url('../img/back.png');
+  padding: 22px 60px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: block;
+  margin: 0 auto;
+  width: 145px !important;
+}
+
+.exit, .replay{
+  background: url('../img/exit.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: block;
+  width: 140px;
+  height: 52px;
+  position: absolute;
+  bottom: 10px;
+  left: 22px;
+  text-indent: -999px;
+  overflow: hidden;
+}
+
+
+.exit:active{
+  background: url('../img/exit_active.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.replay{
+  background: url('../img/replaybtn.png');
+  background-repeat: no-repeat;
+    height: 61px;
+    width: 138px;
+    bottom: 16px;
+}
+
+.replay:active{
+  background: url('../img/replaybtn_active.png');
+  background-repeat: no-repeat;
+}
+
+
+.about .back:active{
+    background:url('../img/back_active.png');
+}
+
+.about ol li b{
+    color:#F77100;
+}
+
+.about ol{
+    margin-bottom: 30px;
+}
+
+.about div{
+    text-indent:-999px;
+    display:block;
+    overflow: hidden;
+}
+
+/*MENU*/
+.menu-bg{
+    background: url('../img/splashbg.png');
+    background-position: 0 0;
+    background-repeat: no-repeat; 
+    position: relative;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.menu_links{
+    position: absolute;
+    height:220px;
+    width: 220px;
+    top: 50%;
+    left: 50%;
+    margin-left:-110px; 
+    z-index: 1;
+    padding:0;
+}
+
+.menu_links li{
+    display: block;
+    margin-left: 22px;
+    text-align: center;
+}
+
+.sp_btn{
+    width:180px;
+    height:55px; 
+    text-indent: -999px;
+    overflow:hidden;
+    margin-bottom: 10px;
+}
+
+.sp_btn a{
+    padding: 20px 27px;
+    display: block;
+}
+
+.playbtn{
+    background: url('../img/playbtn.png');
+    background-repeat: no-repeat;
+    background-position:0 0; 
+}
+
+.playbtn:active{
+    background:url('../img/playbtn_active.png');
+    background-repeat: no-repeat;
+    background-position:0 0; 
+}
+
+.instbtn{
+    background: url('../img/instbtn.png');
+    background-repeat: no-repeat;
+    background-position:0 0; 
+}
+
+.instbtn:active{
+    background: url('../img/instbtn_active.png');
+    background-repeat: no-repeat;
+    background-position:0 0; 
+}
+
+.aboutbtn{
+    background: url('../img/aboutbtn.png');
+    background-repeat: no-repeat;
+    background-position:0 0; 
+}
+
+.aboutbtn:active{
+    background: url('../img/aboutbtn_active.png');
+    background-repeat: no-repeat;
+    background-position:0 0; 
+}
+
+.save_btn{
+    background:url('../img/save_btn.png');
+    background-repeat:no-repeat;
+    background-poition:0 0;
+    height: 50px;
+    width: 127px;
+    border:1px solid red;
+}
+*/
